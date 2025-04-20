@@ -1,0 +1,215 @@
+/* Estilo principal para o site inicial */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Cor do texto principal */
+}
+
+header {
+    background-color: #ff69b4; /* Rosa */
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+button {
+    background-color: #ff69b4; /* Rosa */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffd700; /* Amarelo */
+    color: #333333;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.inicio {
+    background-color: white; /* Rosa */
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.inicio button {
+    background-color: #ff69b4; /* Rosa */
+    color: #ffffff;
+    border: none;
+    font-size: 20px; /* Aumenta o tamanho do texto do botão */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
+  .carrossel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .carrossel img {
+    width: 100%;
+    max-height: 800px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  .botao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .botao.anterior {
+    left: 10px;
+    background: #ffd700;
+  }
+
+  .botao.proximo {
+    right: 10px;
+    background: #e4ddb5
+  }
+
+.fotos {
+    margin-bottom: 100px; /* Adiciona espaço inferior para evitar sobreposição com o footer */
+}
+
+.contador-dias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); 
+    height: 100vh;  
+}
+
+h1 {
+    font-size: 2.5em;
+  }
+
+  .contador {
+    font-size: 2em;
+    margin-top: 30px;
+  }
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+        padding: 15px;
+        text-align: center; /* Centraliza o texto */
+        }
+
+        main {
+        padding: 15px;
+        text-align: center; /* Centraliza o conteúdo */
+        }
+
+        button {
+        padding: 8px 16px;
+        font-size: 16px;
+        margin: 0 auto; /* Centraliza o botão */
+        display: block;
+        }
+
+        .inicio {
+        font-size: 24px;
+        padding: 15px;
+        text-align: center; /* Centraliza o texto */
+        }
+
+        .inicio button {
+        font-size: 18px;
+        padding: 8px 16px;
+        margin: 0 auto; /* Centraliza o botão */
+        display: block;
+        }
+
+        .carrossel-container {
+        width: 100%;
+        margin: 0 auto; /* Centraliza o carrossel */
+        }
+
+        .carrossel img {
+        max-height: 1000px; /* Aumenta o tamanho da imagem para baixo */
+        object-fit: contain; /* Ajusta a imagem ao carrossel sem cortar partes, mantendo a proporção */
+        overflow-x: hidden; /* Impede que o site seja movido para os lados */
+        font-size: 20px; /* Diminui o tamanho do texto para dispositivos menores */
+        height: auto; /* Ajusta a altura automaticamente com base no tamanho da imagem */
+        }
+
+        .botao {
+        font-size: 1.5rem;
+        padding: 8px;
+        }
+
+        .contador-dias {
+        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center; /* Centraliza o conteúdo */
+        }
+
+        h1 {
+        font-size: 2em;
+        text-align: center; /* Centraliza o título */
+        }
+
+        .contador {
+        font-size: 1.5em;
+        text-align: center; /* Centraliza o contador */
+        }
+        }
