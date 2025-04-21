@@ -1,6 +1,6 @@
 // Texto digitando
 
-const palavras = ["Te amo ❤️", "Desde 25 de Julho de 2024 💍", "Para sempre juntos 💕", "Com vocẽ eu me alegro"];
+const palavras = ["Te amo ❤️", "Desde 25 de Julho de 2024 💍", "Para sempre juntos 💕", "Com você eu me alegro"];
     let i = 0; // Índice da palavra
     let j = 0; // Índice da letra
     let apagando = false;
