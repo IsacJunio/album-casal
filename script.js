@@ -120,3 +120,4 @@ function calcularTempoNamoro() {
 
   calcularTempoNamoro();
   setInterval(calcularTempoNamoro, 86400000); // Atualiza a cada 24h
+
